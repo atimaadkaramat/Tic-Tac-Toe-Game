@@ -8,36 +8,32 @@
 </head>
 <body>
 
-    <h1>Tic Tac Toe</h1>
+<h1>Tic Tac Toe</h1>
 
-    <div id="wrapper">
-        <button class="all" onclick="fun(0)"></button>
-        <button class="all" onclick="fun(1)"></button>
-        <button class="all" onclick="fun(2)"></button>
-
-        <button class="all" onclick="fun(3)"></button>
-        <button class="all" onclick="fun(4)"></button>
-        <button class="all" onclick="fun(5)"></button>
-        
-
-        <button class="all" onclick="fun(6)"></button>
-        <button class="all" onclick="fun(7)"></button>
-        <button class="all" onclick="fun(8)"></button>
-
+<div id="gameContainer">
+    <div id="boardContainer">
+        <div id="wrapper">
+            <button class="all" onclick="fun(0)"></button>
+            <button class="all" onclick="fun(1)"></button>
+            <button class="all" onclick="fun(2)"></button>
+            <button class="all" onclick="fun(3)"></button>
+            <button class="all" onclick="fun(4)"></button>
+            <button class="all" onclick="fun(5)"></button>
+            <button class="all" onclick="fun(6)"></button>
+            <button class="all" onclick="fun(7)"></button>
+            <button class="all" onclick="fun(8)"></button>
+        </div>
+        <button id="reset" onclick="reset()">Reset</button>
     </div>
-
-    <button id="reset" onclick="reset()">Reset</button>
 
     <div id="scoreBoard">
         <h2>Score</h2>
-        <br>
-        <h4>Player 1: <input type="text" id="Player1" readonly></h4>
-        <br>
-        <h4>Player 2: <input type="text" id="Player2" readonly></h4>
-        <br>
-        <h4>Draw: <input type="text" id="Draw" readonly></h4>
+        <h4>Player 1 <input type="text" id="Player1" readonly></h4>
+        <h4>Player 2 <input type="text" id="Player2" readonly></h4>
+        <h4>Draw <input type="text" id="Draw" readonly></h4>
     </div>
-    
+</div>
+
 </body>
 </html>
 
